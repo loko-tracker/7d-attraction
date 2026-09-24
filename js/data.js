@@ -107,7 +107,7 @@ const FILMS = [
   { t:"Kingdaka",              genre:"Аттракцион",     dur:"2:03", age:"6+",  img:"film-15" },
   { t:"DreadEye",              genre:"Хоррор",         dur:"2:57", age:"18+", img:"film-16" },
   { t:"Skeleton Island",       genre:"Приключения",    dur:"—",    age:"12+", img:"film-17" },
-  { t:"Sky Dragon",            genre:"Фэнтези",        dur:"4:04", age:"6+",  img:"film-18" },
+  { t:"Парящие храмы",         genre:"Фэнтези",        dur:"4:04", age:"6+",  img:"film-18" },
   { t:"Dream of Dali",         genre:"Артхаус",        dur:"5:09", age:"6+",  img:"film-19" },
   { t:"Elementals",            genre:"Фэнтези",        dur:"5:16", age:"6+",  img:"film-20" },
   { t:"StrangerThings",        genre:"Хоррор",         dur:"5:19", age:"16+", img:"film-21" },
