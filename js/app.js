@@ -145,6 +145,7 @@ function buildChips(){
 
 function card(f){
   const ageCls = 'a' + f.age.replace('+', '');
+  const desc = (typeof DESCRIPTIONS !== 'undefined' && DESCRIPTIONS[f.t]) || '';
   const bars = f.int
     ? `<div class="card-int" title="Интенсивность ${f.int} из 5">${
         Array.from({ length:5 }, (_, i) => `<i class="${i < f.int ? 'on' : ''}"></i>`).join('')}</div>`
@@ -166,6 +167,7 @@ function card(f){
         ${f.dur !== '—' ? `<span class="dot"></span><span>${esc(f.dur)}</span>` : ''}
         ${bars}
       </div>
+      ${desc ? `<p class="card-d" title="${esc(desc)}">${esc(desc)}</p>` : ''}
     </div>
   </article>`;
 }

@@ -243,6 +243,15 @@ h1,h2,h3{
 .card-int i{ width:4px; height:11px; border-radius:2px; background:#2E3441; }
 .card-int i.on{ background:var(--acc); }
 
+/* Описание программы. Обрезаем тремя строками, чтобы карточки в сетке
+   оставались одной высоты; полный текст — во всплывающей подсказке. */
+.card-d{
+  margin:12px 0 0;
+  font-size:13.5px; line-height:1.55; color:var(--muted);
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3;
+  overflow:hidden;
+}
+
 .empty{ text-align:center; padding:60px 20px; color:var(--muted); grid-column:1/-1; }
 
 /* ---------- цены ---------- */
