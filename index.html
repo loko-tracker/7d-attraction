@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7D Attraction — VR-аттракцион в Рыбинске, ТРЦ «Виконда»</title>
+<meta name="description" content="VR-аттракцион 7D в Рыбинске: 53 программы, платформа на 4 места, VR-шлемы, движение кресел и ветер. Сеанс 250 ₽. ТРЦ «Виконда», 2 этаж, зона фудкорта. Ежедневно 10:00–21:00.">
+<meta name="theme-color" content="#0B0C10">
+<link rel="canonical" href="https://kirillgurov230202-debug.github.io/7d-attraction/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="7D Attraction — VR-аттракцион в Рыбинске">
+<meta property="og:description" content="53 программы, платформа на 4 места, VR-шлемы, движение кресел и ветер. Сеанс 250 ₽. ТРЦ «Виконда», 2 этаж.">
+<meta property="og:image" content="img/hero.webp">
+<meta property="og:locale" content="ru_RU">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- ======================= ШАПКА ======================= -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#" class="logo">7<b>D</b></a>
+    <nav class="nav" id="nav">
+      <a href="#how">Как это работает</a>
+      <a href="#catalog">Программы</a>
+      <a href="#prices">Цены</a>
+      <a href="#bday">День рождения</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="hdr-tel" id="hdrTel" href="#">+7 919 004-62-12</a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ======================= ПЕРВЫЙ ЭКРАН ======================= -->
+<section class="hero">
+  <div class="hero-bg"><img src="img/hero.webp" alt="" fetchpriority="high"></div>
+  <div class="wrap">
+    <a class="hero-badge" id="heroBadge" target="_blank" rel="noopener">
+      <b>★ 4,9</b> <span>на Яндекс Картах — 24 оценки</span>
+    </a>
+    <h1>Виртуальная<br>реальность,<br><em>которую трясёт</em></h1>
+    <p class="hero-sub">
+      Платформа на четыре места в ТРЦ «Виконда». Надеваете шлем, кресло срывается
+      вниз, в лицо бьёт ветер — и вы уже не в торговом центре.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-p" id="heroCall" href="#">Забронировать</a>
+      <a class="btn btn-g" href="#catalog">Выбрать программу</a>
+    </div>
+
+    <div class="facts">
+      <div class="fact"><b id="fCount">53</b><span>программы на выбор</span></div>
+      <div class="fact"><b>250 ₽</b><span>один сеанс</span></div>
+      <div class="fact"><b>4</b><span>места на платформе</span></div>
+      <div class="fact"><b>10—21</b><span>работаем ежедневно</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= КАК ЭТО РАБОТАЕТ ======================= -->
+<section class="sec sec-alt" id="how">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <span class="sec-kicker">Как это работает</span>
+      <h2>Три эффекта, которые<br>делают картинку настоящей</h2>
+      <p>Кино можно смотреть. Наш аттракцион приходится переживать: платформа
+         повторяет каждый поворот, а ветер не даёт забыть, что вы летите.</p>
+    </div>
+
+    <div class="fx-grid" id="fxGrid"></div>
+
+    <div class="rig rise" id="rig"></div>
+  </div>
+</section>
+
+<!-- ======================= КАТАЛОГ ======================= -->
+<section class="sec" id="catalog">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <span class="sec-kicker">Библиотека программ</span>
+      <h2>Выберите свой мир</h2>
+      <p>Динозавры, космос, зомби, пираты и спокойное погружение к рифам.
+         Каждая программа — отдельный сеанс от двух до шести минут.</p>
+    </div>
+
+    <div class="filters rise">
+      <div class="fgroup">
+        <span class="fgroup-l">Жанр</span>
+        <div class="chips" id="genreChips"></div>
+      </div>
+      <div class="fgroup">
+        <span class="fgroup-l">Возраст</span>
+        <div class="chips" id="ageChips"></div>
+      </div>
+      <div class="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="q" placeholder="Поиск по названию" aria-label="Поиск программы">
+      </div>
+    </div>
+
+    <p class="fcount" id="fcount"></p>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- ======================= ЦЕНЫ ======================= -->
+<section class="sec sec-alt" id="prices">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <span class="sec-kicker">Цены</span>
+      <h2>Сколько стоит</h2>
+      <p>Любая программа из каталога стоит одинаково — выбирайте по настроению,
+         а не по цене.</p>
+    </div>
+    <div class="prices" id="priceGrid"></div>
+    <p class="price-note rise">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+      <span>Принимаем карты, наличные, СБП и QR. Аттракцион и площадку можно
+      забронировать заранее — на день рождения или выпускной.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ======================= ДЕНЬ РОЖДЕНИЯ ======================= -->
+<section class="sec" id="bday">
+  <div class="wrap">
+    <div class="bday rise" id="bdayBox"></div>
+  </div>
+</section>
+
+<!-- ======================= ОТЗЫВЫ ======================= -->
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <span class="sec-kicker">Отзывы</span>
+      <h2>Что говорят гости</h2>
+    </div>
+
+    <div class="rev-top rise">
+      <div class="rev-score">4,9</div>
+      <div>
+        <div class="stars">
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        </div>
+        <div class="rev-meta">24 оценки и 21 отзыв на Яндекс Картах</div>
+      </div>
+      <a class="btn btn-g" id="revLink" style="margin-left:auto" target="_blank" rel="noopener">Читать все отзывы</a>
+    </div>
+
+    <div class="revs" id="revGrid"></div>
+  </div>
+</section>
+
+<!-- ======================= КОНТАКТЫ ======================= -->
+<section class="sec sec-alt" id="contacts">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <span class="sec-kicker">Контакты</span>
+      <h2>Как нас найти</h2>
+      <p>Второй этаж торгового центра, зона фудкорта.</p>
+    </div>
+
+    <div class="cont">
+      <div>
+        <div class="cont-list" id="contList"></div>
+        <div class="cont-cta">
+          <a class="btn btn-p" id="contCall" href="#">Позвонить</a>
+          <a class="btn btn-g" id="contRoute" target="_blank" rel="noopener">Построить маршрут</a>
+        </div>
+      </div>
+      <div class="map rise">
+        <iframe id="mapFrame" loading="lazy" title="7D Attraction на карте Рыбинска" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= ПОДВАЛ ======================= -->
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <div class="ftr-l" id="ftrLegal"></div>
+    <div class="ftr-soc">
+      <a id="socVk" target="_blank" rel="noopener" aria-label="Мы во ВКонтакте">
+        <svg viewBox="0 0 24 24"><path d="M12.8 17.4c-5.3 0-8.6-3.7-8.7-9.8h2.7c.1 4.5 2.2 6.4 3.7 6.8V7.6h2.6v3.9c1.5-.2 3.1-1.9 3.6-3.9h2.5c-.4 2.4-2 4.1-3.2 4.8 1.2.6 3 2.1 3.7 5h-2.8c-.5-1.7-1.9-3-3.8-3.2v3.2h-.3z"/></svg>
+      </a>
+      <a id="socMaps" target="_blank" rel="noopener" aria-label="Мы на Яндекс Картах">
+        <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
